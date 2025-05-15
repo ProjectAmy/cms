@@ -1,0 +1,10 @@
+[2025-05-15 19:13] Mulai integrasi Supabase dengan aplikasi Express/EJS.
+[2025-05-15 19:15] Membuat file supabaseClient.js dan menghubungkan ke Supabase.
+[2025-05-15 19:17] Route utama diubah: data artikel diambil dari Supabase dan dikirim ke index.ejs.
+[2025-05-15 19:20] index.ejs diubah untuk looping data artikel dan menampilkan sesuai struktur card.
+[2025-05-15 19:27] Debug: Error kolom created_at tidak ada, diarahkan untuk pakai kolom id.
+[2025-05-15 19:30] Query backend diubah: urutkan berdasarkan id saja.
+[2025-05-15 19:34] Penyesuaian nama field di EJS: image_url dan description.
+[2025-05-15 19:40] Tampilan artikel diubah jadi sederhana, gambar kiri, judul & deskripsi kanan.
+[2025-05-15 19:54] Efek hover dan pointer pada artikel, CSS global dibuat dan di-link-kan.
+[2025-05-15 20:01] File log progress berhasil dibuat setelah edit .gitignore.

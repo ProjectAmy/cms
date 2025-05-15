@@ -1,0 +1,16 @@
+<section class="mb-6">
+  <h2 class="text-2xl font-bold mb-4">Artikel</h2>
+  <% if (typeof articles !== 'undefined' && articles && articles.length > 0) { %>
+  <% articles.forEach(function(article) { %>
+    <div class="artikel-item flex items-start bg-white rounded shadow p-3 mb-4 gap-4">
+      <img src="<%= article.image_url %>" alt="<%= article.title %>" class="w-28 h-20 object-cover rounded mr-4 flex-shrink-0">
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold mb-1"><%= article.title %></h3>
+        <p class="text-gray-600 text-sm"><%= article.description %></p>
+      </div>
+    </div>
+  <% }); %>
+<% } else { %>
+  <div class="bg-white shadow rounded p-4 text-center text-gray-500">Tidak ada artikel.</div>
+<% } %>
+</section>
