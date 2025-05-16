@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "concurrently \"browser-sync start --config bs-config.js --no-ui --no-notify\" \"nodemon index.js\""
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,11 @@
     "@supabase/supabase-js": "^2.49.4",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "express-ejs-layouts": "^2.5.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.1.2",
     "nodemon": "^3.1.10"
   }
 }

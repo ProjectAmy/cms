@@ -52,6 +52,6 @@ app.get('/fase3', (req, res) => {
 });
 
 //menjalankan server
-app.listen(3000, () => {
-    console.log('server berjalan di http://localhost:3000');
+app.listen(4000, () => {
+    console.log('server berjalan di http://localhost:4000');
 });
